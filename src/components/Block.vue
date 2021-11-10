@@ -5,7 +5,17 @@
 <script>
 export default {
     name: "Block",
-    props:["delay"]
+    props:["delay"],
+    data() {
+    return {
+    showBlock: false
+     }
+    },
+    mounted() {
+    setTimeOut(()=> {
+    this.showBlock = true
+    }, this.delay)
+    },
 }
 </script>
 
