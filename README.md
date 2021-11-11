@@ -1,4 +1,3 @@
-![](./public/assets/1.jpg)
 
 ![](./public/assets/2.jpg)
 
