@@ -1,5 +1,5 @@
 <template>
-<div class="block" @click="stopTimer"> Click Me </div>
+<div class="block" v-show="showBlock" @click="stopTimer"> Click Me </div>
 </template>
 
 <script>
@@ -14,14 +14,14 @@ export default {
      }
     },
     mounted() {
-    setTimeOut(()=> {
-    this.showBlock = true
+    setTimeout(()=> {
+    this.showBlock = true;
     this.startTimer()
     }, this.delay)
     },
     methods: {
         startTimer() {
-        this.timer = setInterval = (() => {
+        this.timer = setInterval(() => {
         this.reactionTime += 10
         }, 10)
         },
